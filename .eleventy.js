@@ -1,10 +1,6 @@
-module.exports = function (eleventyConfig) {
+module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   return {
-    dir: {
-      input: ".",
-      output: "dist"
-    },
-    pathPrefix: "/"
+    dir: { input: ".", output: "dist" }
   };
 };

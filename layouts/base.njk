@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="de">
+<head>
+  {% include "head.html" %}
+  <title>{% if title %}{{ title }} | {% endif %}Felix\'s Creations</title>
+</head>
+<body>
+  <header>
+    <h1>Felix\'s World</h1>
+    <p>Thoughts, Art, Science & More</p>
+  </header>
+  {% include "nav.html" %}
+  <main>
+    {{ content | safe }}
+  </main>
+  <footer>
+    <p>&copy; 2026 Felix. Free for all. Built with Eleventy & Decap CMS.</p>
+  </footer>
+</body>
+</html>

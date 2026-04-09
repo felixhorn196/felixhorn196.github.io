@@ -1,0 +1,13 @@
+body {font-family: system-ui, sans-serif; max-width: 1200px; margin: 0 auto; padding: 1rem; background: #f9f9f9; color: #333; line-height: 1.6;}
+header {background: #007acc; color: white; padding: 2rem 1rem; text-align: center;}
+nav {background: #eee; padding: 1rem; border-bottom: 1px solid #ddd;}
+nav ul {list-style: none; padding: 0; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;}
+nav a {color: #007acc; text-decoration: none; font-weight: 500;}
+nav a:hover {text-decoration: underline;}
+main {padding: 1rem;}
+article {margin-bottom: 3rem; padding: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+article img {max-width: 100%; height: auto; border-radius: 4px;}
+.grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem;}
+video, iframe {max-width: 100%; height: auto;}
+footer {text-align: center; padding: 2rem; color: #666; border-top: 1px solid #ddd;}
+@media (max-width: 768px) {.grid {grid-template-columns: 1fr;}}

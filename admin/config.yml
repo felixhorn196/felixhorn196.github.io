@@ -1,0 +1,50 @@
+backend:
+  name: github
+  repo: felixhorn196/felixhorn196.github.io
+  branch: main
+  auth_type: implicit
+
+site_url: https://felixhorn196.github.io
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+collections:
+  - name: "stories"
+    label: "Stories, Books, Poems, Letters, Anecdotes"
+    folder: "content/stories"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Thumbnail", name: "thumb", widget: "image", allow_multiple: false}
+
+  - name: "art"
+    label: "Drawings, Paintings, Digital Art"
+    folder: "content/art"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Images", name: "images", widget: "list", types: [image], label: "Image"}
+
+  - name: "videos"
+    label: "Videos, Tutorials"
+    folder: "content/videos"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Embed Code", name: "embed", widget: "text", hint: "Paste YouTube/Vimeo iframe code"}
+      - {label: "Description", name: "body", widget: "markdown"}
+
+  - name: "theories"
+    label: "Scientific Theories"
+    folder: "content/theories"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list", field: {label: "Add Tag", name: "tag", widget: "string"}}

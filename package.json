@@ -1,12 +1,11 @@
 {
   "name": "felix-portfolio",
   "version": "1.0.0",
-  "description": "Felix Portfolio Site",
   "scripts": {
     "build": "eleventy",
-    "serve": "eleventy --serve --quiet"
+    "serve": "eleventy --serve"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0-alpha.2"
+    "@11ty/eleventy": "^2.0.1"
   }
 }
